@@ -10,6 +10,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        window.addFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+        window.statusBarColor     = android.graphics.Color.BLACK
+        window.navigationBarColor = android.graphics.Color.BLACK
         setContentView(R.layout.activity_main)
         hideSystemUI()
     }
